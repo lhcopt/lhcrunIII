@@ -10,3 +10,6 @@ REAL CONST l.MBWMD             =0 ;
 REAL CONST l.MBXWH             =0 ;
 REAL CONST l.MBXWS             =0 ;
 REAL CONST l.MBXWT             =0 ;
+REAL CONST l.lejl              =0 ;
+REAL CONST l.tcddm             =0 ;
+
