@@ -1581,7 +1581,7 @@ LHCINJ.B1:OMK,                     at= -143.071+(154-IP2OFS.B1)*DS,             
   BPTDV.A4L2.B1:BPTDV,             at= -115.988+(154-IP2OFS.B1)*DS, mech_sep= 0.1620, slot_id= 10402672, assembly_id= 5619143,   from= IP2;
   X2ZDC.4L2:X2ZDC001,              at= -113.3245+(154-IP2OFS.B1)*DS, mech_sep= 0, slot_id= 102332,                               from= IP2;
   BRANB.4L2:BRANB,                 at= -111.609+(154-IP2OFS.B1)*DS, mech_sep= 0, slot_id= 377595,                                from= IP2;
-  BTVST.A4L2:BTVST065,             at= -85.433+(154-IP2OFS.B1)*DS, mech_sep= -0.0800, slot_id= 181617,                           from= IP2;
+  BTVST.A4L2:BTVST065,             at= -85.433+(154-IP2OFS.B1)*DS, mech_sep= 0.0800, slot_id= 181617,                           from= IP2;
   TDI.4L2.B1:TDI,                  at= -80.833+(154-IP2OFS.B1)*DS, mech_sep= 0.0760, slot_id= 242830,                            from= IP2;
   TCDD.4L2:TCDD,                   at= -71.228+(154-IP2OFS.B1)*DS, mech_sep= 0, slot_id= 102334,                                 from= IP2;
   BPMSX.4L2.B1:BPMSX001,           at= -69.4405+(154-IP2OFS.B1)*DS, mech_sep= 0, slot_id= 104598,                                from= IP2;
