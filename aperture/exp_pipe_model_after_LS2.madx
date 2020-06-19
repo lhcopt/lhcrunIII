@@ -1,28 +1,28 @@
 ! Define markers for LHC experimental beam pipes as well as vacuum pipes between the Q1 (L/R)
-! Prepared by M. Giovannozzi based on information by A. Rossi obtained from official 
+! Prepared by M. Giovannozzi based on information by A. Rossi obtained from official
 ! drawings
-! Radial tolerance reduced to 11 mm (it was 15 mm = 2.6 survey + 2.6 mech. + 9.8 mm other) 
+! Radial tolerance reduced to 11 mm (it was 15 mm = 2.6 survey + 2.6 mech. + 9.8 mm other)
 ! for the central part of the experimental beam pipes (where radius is smaller than 30 mm).
-! Such a decision was taken after discussion with R. Veness (03/09/09) and also noted in 
+! Such a decision was taken after discussion with R. Veness (03/09/09) and also noted in
 ! the LEB minutes.
-! Radial tolerance reduced to 9.5 mm (it was 15 mm = 2.6 survey + 2.6 mech. + 9.8 mm other) 
+! Radial tolerance reduced to 9.5 mm (it was 15 mm = 2.6 survey + 2.6 mech. + 9.8 mm other)
 ! for the CT2 part of the CMS beam pipe.
-! Such a decision was taken after discussion with R. Veness et al. (06/10/09) and also noted 
+! Such a decision was taken after discussion with R. Veness et al. (06/10/09) and also noted
 ! in the LCU minutes.
 ! The elements *52 in IR1/5 have TAS-like tolerances
 ! The elements IR* have chamber-like tolerances
-! Radial tolerance of element LHCBPIPE7.R8 (extremity of VELO) reduced to 11 mm after 
+! Radial tolerance of element LHCBPIPE7.R8 (extremity of VELO) reduced to 11 mm after
 ! discussion with Ray (07/09/10). Such a tolerance is in any case a very conservative one.
 ! Revision of tolerances with s-dependent values as agreed with M. Gallilee: CMS - 14/03/12
 ! Revision of tolerances with s-dependent values as agreed with M. Gallilee: ATLAS - 20/03/12
-! Revision of installation positions, tolerances and aperture for LHCb beam pipe following 
+! Revision of installation positions, tolerances and aperture for LHCb beam pipe following
 ! new data provided by M. Gallilee - 05/06/12
-! Revision of installation positions, tolerances and aperture for Alice beam pipe following 
+! Revision of installation positions, tolerances and aperture for Alice beam pipe following
 ! new data provided by M. Gallilee - 05/06/12
 ! New Alice experimental beam pipe layout, data provided by A. Tauro - 15/04/14
 ! New CMS experimental beam pipe layout, data provided by W. Zeuner - 09/02/17
 !
-! Define Markers for the aperture of IR1  
+! Define Markers for the aperture of IR1
 ! Left
 ATLASpipe1.l1 : marker, APERTYPE=CIRCLE, APERTURE={0.02350}, APER_TOL:= {0.00705+r_tol_ATLAS, 0.0, 0.0};
 ATLASpipe2.l1 : marker, APERTYPE=CIRCLE, APERTURE={0.02350}, APER_TOL:= {0.00705+r_tol_ATLAS, 0.0, 0.0};
@@ -148,7 +148,7 @@ ATLASpipe52.r1: marker, APERTYPE=CIRCLE, APERTURE={0.02000}, APER_TOL:= {0.00123
 !IR1pipe60.r1  : marker, APERTYPE=CIRCLE, APERTURE={0.01700}, APER_TOL:= {0.00100+r_tol_ATLAS, 0.0, 0.0};
 !IR1pipe61.r1  : marker, APERTYPE=CIRCLE, APERTURE={0.01700}, APER_TOL:= {0.00100+r_tol_ATLAS, 0.0, 0.0};
 !
-! Define Markers for the aperture of IR2  
+! Define Markers for the aperture of IR2
 ! Left
 Alicepipe1.l2 : marker, APERTYPE=CIRCLE, APERTURE={0.01820}, APER_TOL:= {0.00610+r_tol_Alice, 0.0, 0.0};
 Alicepipe2.l2 : marker, APERTYPE=CIRCLE, APERTURE={0.01820}, APER_TOL:= {0.00610+r_tol_Alice, 0.0, 0.0};
@@ -273,7 +273,7 @@ Alicepipe58.r2: marker, APERTYPE=CIRCLE, APERTURE={0.14095}, APER_TOL:= {0.00100
 Alicepipe59.r2: marker, APERTYPE=CIRCLE, APERTURE={0.05574}, APER_TOL:= {0.00100+r_tol_Alice, 0.0, 0.0};
 Alicepipe60.r2: marker, APERTYPE=CIRCLE, APERTURE={0.05000}, APER_TOL:= {0.00100+r_tol_Alice, 0.0, 0.0};
 !
-! Define Markers for the aperture of IR5  
+! Define Markers for the aperture of IR5
 ! Left
 CMSpipe1.l5 : marker, APERTYPE=CIRCLE, APERTURE={0.02170}, APER_TOL:= {0.00605+r_tol_CMS, 0.0, 0.0};
 CMSpipe2.l5 : marker, APERTYPE=CIRCLE, APERTURE={0.02170}, APER_TOL:= {0.00605+r_tol_CMS, 0.0, 0.0};
@@ -369,67 +369,80 @@ CMSpipe45.r5: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00466+r
 !
 ! Define Markers for the aperture of IR8
 ! Left
-LHCbpipe1.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe2.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe3.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe4.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe5.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe6.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe7.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe8.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe9.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe10.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe11.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe12.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe13.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe14.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe15.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe16.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe17.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe18.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe19.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe20.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe21.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe22.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe23.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe24.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe25.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe26.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe27.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe28.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};    
-LHCbpipe29.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe30.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe31.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe32.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe33.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe34.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe35.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe36.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe37.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe38.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe39.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe40.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe41.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe42.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe43.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe44.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe45.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe46.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00196+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe47.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00190+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe48.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00184+r_tol_LHCb, 0.0, 0.0};    
-LHCbpipe49.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00177+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe50.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00171+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe51.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00164+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe52.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00158+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe53.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00151+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe54.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00145+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe55.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00139+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe56.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00132+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe57.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00126+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe58.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00119+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe59.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00113+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe60.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00106+r_tol_LHCb, 0.0, 0.0};	  
-LHCbpipe61.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00100+r_tol_LHCb, 0.0, 0.0};	  
+!from josef 4/5/2020
+LHCbpipe1a.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.02800}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe2a.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.02800}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe3a.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.02800}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe4a.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.02800}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe5a.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.02700}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe6a.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.02700}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe7a.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.03150}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe8a.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.03150}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe9a.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.03150}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe10a.l8: marker, APERTYPE=CIRCLE, APERTURE={0.03150}, APER_TOL = {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe11a.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL = {0.00200+r_tol_LHCb, 0.0, 0.0};
+
+!LHCbpipe1.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+!LHCbpipe2.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+!LHCbpipe3.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+!LHCbpipe4.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe5.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe6.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe7.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe8.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe9.l8 : marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe10.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00850+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe11.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe12.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe13.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe14.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe15.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe16.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe17.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe18.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe19.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe20.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe21.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe22.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe23.l8: marker, APERTYPE=CIRCLE, APERTURE={0.02600}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe24.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe25.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe26.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe27.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe28.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe29.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe30.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe31.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe32.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe33.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe34.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe35.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe36.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe37.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe38.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe39.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe40.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe41.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe42.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe43.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe44.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe45.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00200+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe46.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00196+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe47.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00190+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe48.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00184+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe49.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00177+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe50.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00171+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe51.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00164+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe52.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00158+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe53.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00151+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe54.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00145+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe55.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00139+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe56.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00132+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe57.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00126+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe58.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00119+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe59.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00113+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe60.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00106+r_tol_LHCb, 0.0, 0.0};
+LHCbpipe61.l8: marker, APERTYPE=CIRCLE, APERTURE={0.04000}, APER_TOL:= {0.00100+r_tol_LHCb, 0.0, 0.0};
 ! Right side of IP8
 LHCbpipe1.r8 : marker, APERTYPE=CIRCLE, APERTURE={0.03546}, APER_TOL:= {0.00728+r_tol_LHCb, 0.0, 0.0};
 LHCbpipe2.r8 : marker, APERTYPE=CIRCLE, APERTURE={0.03093}, APER_TOL:= {0.00606+r_tol_LHCb, 0.0, 0.0};
