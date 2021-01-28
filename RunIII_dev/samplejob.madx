@@ -1,0 +1,57 @@
+!! S. Fartoukh. Pedestrain, sample job for using Run III optics files
+
+
+System,"ln -fns /afs/cern.ch/eng/lhc/optics/runII/2018/ db2018";
+System,"ln -fns /afs/cern.ch/eng/lhc/optics/runIII/RunIII_dev dbrun3";
+System,"ln -fns /afs/cern.ch/eng/lhc/optics/runIII/RunIII_dev/2021/ db2021";
+System,"ln -fns /afs/cern.ch/eng/lhc/optics/runIII/RunIII_dev/2022/ db2022";
+
+option,-echo,-warn;
+
+
+call,file="db2018/lhc_as-built.seq";
+ call,file="dbrun3/IR7-Run3seqedit.madx";  !! New IR7 MQW layout and cabling
+!call,file="dbrun3/IR7-Run2seqedit.madx";  !! Go back to  IR7 MQW layout and cabling in Run 2
+
+nrj=7000;  !nrj=450;
+Beam,particle=proton,sequence=lhcb1,energy=NRJ,NPART=1.15E11,sige=4.5e-4;
+Beam,particle=proton,sequence=lhcb2,energy=NRJ,bv = -1,NPART=1.15E11,sige=4.5e-4;         
+
+!! Load some optics
+call,file="db2021/PROTON/opticsfile.21";     !! 2021 optics
+!call,file="db2022/PROTON/opticsfile.34";    !! 2022 optics
+
+!! Which beta*, which telescope, which corresponding pre-squeezed beta* ?
+! beta* in IR1/2/5/8
+value,betxip1b1,betxip2b1,betxip5b1,betxip5b1;
+! Tele-index in IR1/5
+value,rx_IP1,ry_IP1,rx_IP5,ry_IP5;
+! Corresponding pre-squeezed beta* at IP1 and IP5
+betxip1b1_pre=betxip1b1*rx_IP1;betyip1b1_pre=betyip1b1*ry_IP1;betxip5b1_pre=betxip5b1*rx_IP5;betyip5b1_pre=betyip5b1*ry_IP5;
+value,betxip1b1_pre,betyip1b1_pre,betxip5b1_pre,betyip5b1_pre;
+
+!! Make a twiss and check wether the optics is  matched as expected
+on_x1=0;on_x5=0;on_x2=0;on_x8=0;on_sep1=0;on_sep2=0;on_sep5=0;on_sep8=0;on_alice=0;on_lhcb=0; !! flat machine
+use,sequence=lhcb1;
+twiss;
+! Tunes
+Value, table(summ,q1),table(summ,q2),table(summ,dq1),table(summ,dq2);
+! Beta's
+Value, table(twiss,IP1,betx),table(twiss,IP2,betx),table(twiss,IP5,betx),table(twiss,IP8,betx);
+
+use,sequence=lhcb2;
+twiss;
+! Tunes
+Value, table(summ,q1),table(summ,q2),table(summ,dq1),table(summ,dq2);
+! Beta's
+Value, table(twiss,IP1,betx),table(twiss,IP2,betx),table(twiss,IP5,betx),table(twiss,IP8,betx);
+
+system,"rm -rf db2018";
+system,"rm -rf dbrun3";
+system,"rm -rf db2021";
+system,"rm -rf db2022";
+
+return;
+
+
+

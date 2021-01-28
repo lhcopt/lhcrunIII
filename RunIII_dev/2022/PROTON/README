@@ -1,0 +1,49 @@
+!S. Fartoukh, First readme file for 2022 proton optics, 31/10/2019
+**** DEFAULT SETTINGS:
+a) nrj defined to 7.00 TeV in all optics files
+b) tunes matched to 62.31/60.32 for all optics files
+c) chroma matched to 2 units for all optics files
+d) octupoles OFF (calibrated in LSA knob value, e.g ON_MO.b1 = -3 means about + 600 A in the MOs with positive polarity)
+e) nominal crossing plane (V/V/H/H in IR1/2/5/8)
+f) IP crossing knob (on_x1/2/5/8) calibrated in microrad and set constant to 160/200/160/250 for all optics files of the ramp (will be changed as soon as the nrj ramp is defined)
+g) IP crossing knob (on_x1/2/5/8) calibrated in microrad and set to their BBLR driven minimum values in all optics files at flat top energy (collide and squeeze or beta* levelling beam process) 
+[ onx1/5=0.5*(132.47 + 58.3959 * sqrt(beta_ref) + 30.0211 * beta_ref)/sqrt(beta_ref), on_x2=200, on_x8=-250 ]
+h) IP parallel sep knob (on_sep1/2/5/8) calibrated in mm and set constant in all optics files 
+g) IP shift knob (on_oh/v/1/2/5/8) calibrated in mm and set to 0 (Alice and CMS assumed to be re-aligned caompared to Run II)
+i) on_a2/on_a8 (pitch of the || plane in IR2/8) set to zero by default in all optics files (to be redefined especially for specific studies at injection, Run II values are still suitable)
+
+**** FILE NAMING CONVENTION (for upload in LSA, only files with "_LSA" suffix should be used)
+opticsfile.1   : beta*_IP1/2/5/8= 11.000/10.000/11.000/10.000 ; Tele-index= 1.00000 ; Presqueezed beta* =11.000 ; ! Injection			                                   ! same as 2021 opticsfile.1	   
+opticsfile.2   : beta*_IP1/2/5/8= 10.000/10.000/10.000/10.000 ; Tele-index= 1.00000 ; Presqueezed beta* =10.000 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.2	       
+opticsfile.3   : beta*_IP1/2/5/8=  9.600/10.000/ 9.600/ 9.600 ; Tele-index= 1.00000 ; Presqueezed beta* = 9.600 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.3		
+opticsfile.4   : beta*_IP1/2/5/8=  9.100/10.000/ 9.100/ 9.100 ; Tele-index= 1.00000 ; Presqueezed beta* = 9.100 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.4		
+opticsfile.5   : beta*_IP1/2/5/8=  8.300/10.000/ 8.300/ 8.300 ; Tele-index= 1.00000 ; Presqueezed beta* = 8.300 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.5	
+opticsfile.6   : beta*_IP1/2/5/8=  7.100/10.000/ 7.100/ 7.100 ; Tele-index= 1.00000 ; Presqueezed beta* = 7.100 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.6	
+opticsfile.7   : beta*_IP1/2/5/8=  5.900/10.000/ 5.900/ 5.900 ; Tele-index= 1.00000 ; Presqueezed beta* = 5.900 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.7	
+opticsfile.8   : beta*_IP1/2/5/8=  4.900/10.000/ 4.900/ 4.900 ; Tele-index= 1.00000 ; Presqueezed beta* = 4.900 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.8	
+opticsfile.9   : beta*_IP1/2/5/8=  4.100/10.000/ 4.100/ 4.100 ; Tele-index= 1.00000 ; Presqueezed beta* = 4.100 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.9	
+opticsfile.10  : beta*_IP1/2/5/8=  3.300/10.000/ 3.300/ 3.300 ; Tele-index= 1.00000 ; Presqueezed beta* = 3.300 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.10	
+opticsfile.11  : beta*_IP1/2/5/8=  2.600/10.000/ 2.600/ 2.600 ; Tele-index= 1.00000 ; Presqueezed beta* = 2.600 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.11	
+opticsfile.12  : beta*_IP1/2/5/8=  2.100/10.000/ 2.100/ 2.100 ; Tele-index= 1.00000 ; Presqueezed beta* = 2.100 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.12	
+opticsfile.13  : beta*_IP1/2/5/8=  1.700/10.000/ 1.700/ 1.700 ; Tele-index= 1.00000 ; Presqueezed beta* = 1.700 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.13	
+opticsfile.14  : beta*_IP1/2/5/8=  1.500/10.000/ 1.500/ 1.500 ; Tele-index= 1.00000 ; Presqueezed beta* = 1.500 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! same as 2021 opticsfile.14	
+opticsfile.15  : beta*_IP1/2/5/8=  1.506/10.000/ 1.506/ 1.500 ; Tele-index= 1.15000 ; Presqueezed beta* = 1.310 ; ! Combined ramp and pre-squeeze and antitele-squeeze at quasi-constant beta*~1.5 m     ! same as 2021 opticsfile.15			       
+opticsfile.16  : beta*_IP1/2/5/8=  1.508/10.000/ 1.508/ 1.500 ; Tele-index= 1.30000 ; Presqueezed beta* = 1.160 ; ! Combined ramp and pre-squeeze and antitele-squeeze at quasi-constant beta*~1.5 m     ! same as 2021	opticsfile.16		      
+opticsfile.17  : beta*_IP1/2/5/8=  1.502/10.000/ 1.502/ 1.500 ; Tele-index= 1.45833 ; Presqueezed beta* = 1.030 ; ! Combined ramp and pre-squeeze and antitele-squeeze at quasi-constant beta*~1.5 m     ! same as 2021	opticsfile.17	      
+opticsfile.18  : beta*_IP1/2/5/8=  1.500/10.000/ 1.500/ 1.500 ; Tele-index= 1.66667 ; Presqueezed beta* = 0.900 ; ! Combined ramp and pre-squeeze and antitele-squeeze at quasi-constant beta*~1.5 m     ! same as 2021 opticsfile.18
+opticsfile.19  : beta*_IP1/2/5/8=  1.501/10.000/ 1.501/ 1.500 ; Tele-index= 1.97500 ; Presqueezed beta* = 0.760 ; ! Combined ramp and pre-squeeze and antitele-squeeze at quasi-constant beta*~1.5 m     ! new vs. 2021	
+opticsfile.20  : beta*_IP1/2/5/8=  1.501/10.000/ 1.501/ 1.500 ; Tele-index= 2.27500 ; Presqueezed beta* = 0.660 ; ! Combined ramp and pre-squeeze and antitele-squeeze at quasi-constant beta*~1.5 m     ! new vs. 2021	
+opticsfile.21  : beta*_IP1/2/5/8=  1.500/10.000/ 1.500/ 1.500 ; Tele-index= 2.50000 ; Presqueezed beta* = 0.600 ; ! Combined ramp and pre-squeeze and antitele-squeeze at quasi-constant beta*~1.5 m     ! new vs. 2021  
+opticsfile.22  : beta*_IP1/2/5/8=  1.330/10.000/ 1.330/ 1.500 ; Tele-index= 2.21667 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! new vs. 2021  
+opticsfile.23  : beta*_IP1/2/5/8=  1.160/10.000/ 1.160/ 1.500 ; Tele-index= 1.93333 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! new vs. 2021   
+opticsfile.24  : beta*_IP1/2/5/8=  1.000/10.000/ 1.000/ 1.500 ; Tele-index= 1.66667 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.20    
+opticsfile.25  : beta*_IP1/2/5/8=  0.840/10.000/ 0.840/ 1.500 ; Tele-index= 1.40000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.21    
+opticsfile.26  : beta*_IP1/2/5/8=  0.710/10.000/ 0.710/ 1.500 ; Tele-index= 1.18333 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.22    
+opticsfile.27  : beta*_IP1/2/5/8=  0.600/10.000/ 0.600/ 1.500 ; Tele-index= 1.00000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.23    
+opticsfile.28  : beta*_IP1/2/5/8=  0.510/10.000/ 0.510/ 1.500 ; Tele-index= 0.85000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.24   
+opticsfile.29  : beta*_IP1/2/5/8=  0.430/10.000/ 0.430/ 1.500 ; Tele-index= 0.71667 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.25    
+opticsfile.30  : beta*_IP1/2/5/8=  0.360/10.000/ 0.360/ 1.500 ; Tele-index= 0.60000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.26    
+opticsfile.31  : beta*_IP1/2/5/8=  0.300/10.000/ 0.300/ 1.500 ; Tele-index= 0.50000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.27    
+opticsfile.32  : beta*_IP1/2/5/8=  0.250/10.000/ 0.250/ 1.500 ; Tele-index= 0.41667 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.28    
+opticsfile.33  : beta*_IP1/2/5/8=  0.220/10.000/ 0.220/ 1.500 ; Tele-index= 0.36667 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.29    
+opticsfile.34  : beta*_IP1/2/5/8=  0.200/10.000/ 0.200/ 1.500 ; Tele-index= 0.33333 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! same as 2021 opticsfile.30    

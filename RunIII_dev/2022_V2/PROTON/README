@@ -1,0 +1,45 @@
+!S. Fartoukh,  readme file for 2022 proton optics 3rd version, 16/11/2020
+**** DEFAULT SETTINGS:
+a) nrj defined to 7.00 TeV in all optics files (will be changed as soon as the nrj ramp is defined)
+b) tunes matched to 62.31/60.32 for all optics files
+c) chroma matched to 0 units for all optics files
+d) octupoles OFF (calibrated in LSA knob value, e.g ON_MO.b1 = -3 means about + 600 A in the MOs with positive polarity)
+e) nominal crossing plane (V/V/H/H in IR1/2/5/8)
+f) IP crossing knob (on_x1/2/5/8) calibrated in microrad and set constant to 160/200/160/250 for all optics files of the ramp (will be changed as soon as the nrj ramp is defined)
+g) IP crossing knob (on_x1/2/5/8) calibrated in microrad and set to their BBLR driven minimum values in all optics files at flat top energy (collide and squeeze or beta* levelling beam process) 
+[ onx1/5=0.5*(139.1440723006111 - 20.430715305344147 * sqrt(beta_ref) + 196.968287389649 * beta_ref -69.72494849614932) * beta_ref^1.5)/sqrt(beta_ref), on_x2=200, on_x8=-250 ]
+h) IP parallel sep knob (on_sep1/2/5/8) calibrated in mm and set constant in all optics files (will be changed as soon as the nrj ramp is defined)
+g) IP shift knob (on_oh/v/1/2/5/8) calibrated in mm and set to 0 (Alice and CMS assumed to be re-aligned caompared to Run II)
+i) on_a2/on_a8 (pitch of the || plane in IR2/8) set to zero by default in all optics files (will be changed as soon as the nrj ramp is defined)
+j) Note the new IP knobs in IR2/8: on_sep2h, on_sep2v,on_x2h, on_x2v (instead of on_sep2 and on_x2), idem for IR8
+
+**** FILE NAMING CONVENTION (for upload in LSA, only files with "_LSA" suffix should be used)
+opticsfile.1   : beta*_IP1/2/5/8= 11.000/10.000/11.000/10.000 ; Tele-index= 1.00000 ; Presqueezed beta* =11.000 ; ! Injection			                                   !     
+opticsfile.2   : beta*_IP1/2/5/8= 10.000/10.000/10.000/10.000 ; Tele-index= 1.00000 ; Presqueezed beta* =10.000 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   !         
+opticsfile.3   : beta*_IP1/2/5/8=  9.600/10.000/ 9.600/ 9.600 ; Tele-index= 1.00000 ; Presqueezed beta* = 9.600 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   !          
+opticsfile.4   : beta*_IP1/2/5/8=  9.100/10.000/ 9.100/ 9.100 ; Tele-index= 1.00000 ; Presqueezed beta* = 9.100 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   !          
+opticsfile.5   : beta*_IP1/2/5/8=  8.400/10.000/ 8.400/ 8.400 ; Tele-index= 1.00000 ; Presqueezed beta* = 8.400 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! 
+opticsfile.6   : beta*_IP1/2/5/8=  7.300/10.000/ 7.300/ 7.300 ; Tele-index= 1.00000 ; Presqueezed beta* = 7.300 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! 
+opticsfile.7   : beta*_IP1/2/5/8=  6.100/10.000/ 6.100/ 6.100 ; Tele-index= 1.00000 ; Presqueezed beta* = 6.100 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! 
+opticsfile.8   : beta*_IP1/2/5/8=  5.000/10.000/ 5.000/ 5.000 ; Tele-index= 1.00000 ; Presqueezed beta* = 5.000 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! 
+opticsfile.9   : beta*_IP1/2/5/8=  4.100/10.000/ 4.100/ 4.100 ; Tele-index= 1.00000 ; Presqueezed beta* = 4.100 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   ! 
+opticsfile.10  : beta*_IP1/2/5/8=  3.300/10.000/ 3.300/ 3.300 ; Tele-index= 1.00000 ; Presqueezed beta* = 3.300 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   !  
+opticsfile.11  : beta*_IP1/2/5/8=  2.700/10.000/ 2.700/ 2.700 ; Tele-index= 1.00000 ; Presqueezed beta* = 2.700 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   !  
+opticsfile.12  : beta*_IP1/2/5/8=  2.200/10.000/ 2.200/ 2.200 ; Tele-index= 1.00000 ; Presqueezed beta* = 2.200 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   !  
+opticsfile.13  : beta*_IP1/2/5/8=  2.000/10.000/ 2.000/ 2.000 ; Tele-index= 1.00000 ; Presqueezed beta* = 2.000 ; ! Combined ramp and pre-squeeze at constant tele-index=1.00000   !  
+opticsfile.14  : beta*_IP1/2/5/8=  1.837/10.000/ 1.837/ 2.000 ; Tele-index= 0.82759 ; Presqueezed beta* = 1.520 ; ! Combined ramp and pre-squeeze and antitele-squeeze at decreased beta* (2m --> 1.2 m) !  
+opticsfile.15  : beta*_IP1/2/5/8=  1.722/10.000/ 1.722/ 2.000 ; Tele-index= 0.73171 ; Presqueezed beta* = 1.260 ; ! Combined ramp and pre-squeeze and antitele-squeeze at decreased beta* (2m --> 1.2 m) !   		      
+opticsfile.16  : beta*_IP1/2/5/8=  1.592/10.000/ 1.592/ 2.000 ; Tele-index= 0.65934 ; Presqueezed beta* = 1.050 ; ! Combined ramp and pre-squeeze and antitele-squeeze at decreased beta* (2m --> 1.2 m) !   		   
+opticsfile.17  : beta*_IP1/2/5/8=  1.431/10.000/ 1.431/ 2.000 ; Tele-index= 0.57971 ; Presqueezed beta* = 0.830 ; ! Combined ramp and pre-squeeze and antitele-squeeze at decreased beta* (2m --> 1.2 m) !   	   
+opticsfile.18  : beta*_IP1/2/5/8=  1.200/10.000/ 1.200/ 2.000 ; Tele-index= 0.50000 ; Presqueezed beta* = 0.600 ; ! Combined ramp and pre-squeeze and antitele-squeeze at decreased beta* (2m --> 1.2 m) !
+opticsfile.19  : beta*_IP1/2/5/8=  1.000/10.000/ 1.000/ 2.000 ; Tele-index= 0.60000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! 
+opticsfile.20  : beta*_IP1/2/5/8=  0.840/10.000/ 0.840/ 2.000 ; Tele-index= 0.71429 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! 
+opticsfile.21  : beta*_IP1/2/5/8=  0.710/10.000/ 0.710/ 2.000 ; Tele-index= 0.84507 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! 
+opticsfile.22  : beta*_IP1/2/5/8=  0.600/10.000/ 0.600/ 2.000 ; Tele-index= 1.00000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! 
+opticsfile.23  : beta*_IP1/2/5/8=  0.510/10.000/ 0.510/ 2.000 ; Tele-index= 1.17647 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m !    
+opticsfile.24  : beta*_IP1/2/5/8=  0.430/10.000/ 0.430/ 2.000 ; Tele-index= 1.39535 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m !    
+opticsfile.25  : beta*_IP1/2/5/8=  0.360/10.000/ 0.360/ 2.000 ; Tele-index= 1.66667 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m !    
+opticsfile.26  : beta*_IP1/2/5/8=  0.300/10.000/ 0.300/ 2.000 ; Tele-index= 2.00000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m !    
+opticsfile.27  : beta*_IP1/2/5/8=  0.250/10.000/ 0.250/ 2.000 ; Tele-index= 2.40000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m ! 
+opticsfile.28  : beta*_IP1/2/5/8=  0.220/10.000/ 0.220/ 2.000 ; Tele-index= 2.72727 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m !    
+opticsfile.29  : beta*_IP1/2/5/8=  0.200/10.000/ 0.200/ 2.000 ; Tele-index= 3.00000 ; Presqueezed beta* = 0.600 ; ! Collide and tele-squeeze (i.e. beta* levelling) at constant pre-squeezed beta*=0.6 m !    
